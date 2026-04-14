@@ -122,7 +122,3 @@ Update the database credentials in Cell 2, then run all cells. Charts will be sa
 
 ---
 
-## Related Projects
-
-- [Customer Win-Back Engine](https://github.com/JustineDataEng/Retail-Intelligence-System) — Python-based RFM pipeline and forecasting on the same dataset
-- [IMDB Movie Data Pipeline](https://github.com/JustineDataEng/IMDB-Movie-Data-Pipeline) — Web scraping pipeline using Selenium and BeautifulSoup
