@@ -1,8 +1,8 @@
 """
 load_data.py
 ------------
-Downloads the Online Retail II dataset from the UCI URL,
-cleans it, and loads it into a PostgreSQL database.
+Downloads Online Retail II dataset from the UCI URL,
+cleans it, and then loads it into a PostgreSQL database.
 
 Requirements:
     pip install pandas openpyxl sqlalchemy psycopg2-binary
@@ -40,7 +40,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     # Standardise column names
     df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
 
-    # Drop rows missing CustomerID (cannot segment without it)
+    # Drop rows missing CustomerID
     before = len(df)
     df = df.dropna(subset=["customer_id"])
     print(f"  Dropped {before - len(df):,} rows with missing CustomerID")
