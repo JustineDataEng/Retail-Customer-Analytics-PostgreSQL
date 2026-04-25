@@ -32,7 +32,7 @@ The goal is to show how the same business intelligence work (customer segmentati
 
 ```
 retail-sql-intelligence/
-├── load_data.py                          # Downloads dataset, cleans it, loads to PostgreSQL
+├── load_data.py                          
 ├── notebooks/
 │   └── retail_sql_analysis.ipynb        # Full exploratory analysis with visualisations
 ├── sql/
