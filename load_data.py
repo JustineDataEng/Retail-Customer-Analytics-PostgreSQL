@@ -1,13 +1,3 @@
-"""
-load_data.py
-------------
-Downloads Online Retail II dataset from the UCI URL,
-cleans it, and then loads it into a PostgreSQL database.
-
-Requirements:
-    pip install pandas openpyxl sqlalchemy psycopg2-binary
-"""
-
 import pandas as pd
 from sqlalchemy import create_engine, text
 import os
